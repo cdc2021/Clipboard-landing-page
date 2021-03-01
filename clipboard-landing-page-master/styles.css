@@ -1,0 +1,465 @@
+/* GLOBAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.1rem;
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 100%;
+  max-height: 90%;
+}
+h1,
+h2,
+h3 {
+  color: hsl(210, 10%, 33%);
+}
+p {
+  color: hsl(201, 11%, 66%);
+}
+
+/* HISTORY SECTION */
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+.intro p {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+ul {
+  list-style: none;
+}
+.downloads ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+button {
+  padding: 1rem 3rem;
+  border-radius: 3rem;
+  border-style: none;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: ease-in-out 1s;
+}
+.btn-ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: hsl(171, 66%, 44%) 0px 2px 6px;
+  margin-right: 1.5rem;
+}
+.btn-mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: hsl(233, 100%, 69%) 0px 2px 6px;
+}
+button:hover {
+  transform: translateY(-10%);
+}
+
+/* SNIPPETS SECTION*/
+
+.snippet-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+.snippet-text p {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.snippet-options {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.computer img {
+  transform: translateX(-10%);
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.options p {
+  padding-top: 1rem;
+  line-height: 1.5;
+}
+
+/* ACCESS SECTION */
+
+.access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8rem;
+}
+.access p {
+  text-align: center;
+}
+
+.devices {
+  padding-top: 3rem;
+}
+
+/* WORKFLOW SECTION */
+
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 5rem;
+  text-align: center;
+}
+.tools-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+.tools-img h3 {
+  padding-top: 1rem;
+}
+.tools-img p {
+  font-size: 1rem;
+  padding-top: 1rem;
+}
+
+.tools-2 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+/* CLIPBOARD SECTION */
+
+.clipboard-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 6rem;
+}
+.clipboard-text {
+  text-align: center;
+  padding-top: 10rem;
+}
+.clipboard-text h3 {
+  padding-bottom: 1rem;
+}
+.clipboard-text p {
+  padding-bottom: 1rem;
+}
+.clipboard {
+  padding-bottom: 10rem;
+}
+
+/* FOOTER */
+.footer-wrapper {
+  background-color: hsla(202, 11%, 66%, 0.116);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer img {
+  max-width: 50px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.footer img:hover {
+  transform: translateY(-10%);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.links ul {
+  display: grid;
+  grid-template-areas:
+    "faq privacy install"
+    "contact press .";
+  gap: 1rem;
+}
+a:link {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+a:visited {
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+.faq li {
+  grid-area: faq;
+}
+.privacy li {
+  grid-area: privacy;
+}
+.install li {
+  grid-area: install;
+}
+.contact li {
+  grid-area: contact;
+}
+.press li {
+  grid-area: press;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.icons img {
+  transition: 0.5s ease-in-out;
+}
+.icons img:hover {
+  transform: translateY(-20%);
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.facebook {
+  padding-right: 1rem;
+}
+.instagram {
+  padding-left: 1rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1100px) {
+  .snippet-options {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .computer img {
+    transform: translateX(0%);
+    width: 700px;
+  }
+  .options {
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .options p {
+    padding-bottom: 2rem;
+  }
+  /* ACCESS SECTION */
+  .access {
+    padding-top: 5rem;
+  }
+  .devices img {
+    width: 700px;
+  }
+
+  .workflow {
+    padding-top: 1rem;
+  }
+
+  /* CLIPBOARD SECTION */
+
+  .clipboard-img {
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+  .clipboard-text {
+    padding-top: 4rem;
+  }
+  .clipboard-img img {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .footer-wrapper {
+    flex-direction: column;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .faq li {
+    padding-bottom: 1rem;
+  }
+
+  .facebook {
+    padding-right: 2rem;
+  }
+  .instagram {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .intro {
+    max-width: 480px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .intro p {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .downloads ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .btn-ios {
+    margin-right: 0rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  button {
+    padding: 1.2rem 6rem;
+  }
+
+  .snippet-text {
+    padding-top: 4rem;
+  }
+  .snippet-text p {
+    max-width: 400px;
+  }
+  .computer img {
+    width: 500px;
+  }
+  .access {
+    padding-top: 4rem;
+  }
+  .access p {
+    max-width: 400px;
+  }
+  .devices img {
+    max-width: 550px;
+  }
+  .tools-2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .clipboard-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .clipboard-text p {
+    max-width: 420px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .computer img {
+    max-width: 400px;
+  }
+  .devices img {
+    max-width: 400px;
+  }
+  .links ul {
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+    padding-top: 1.5rem;
+  }
+  .snippet-text h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .snippet-text p {
+    font-size: 1rem;
+    max-width: 325px;
+  }
+  .computer img {
+    width: 300px;
+  }
+  .options {
+    max-width: 340px;
+  }
+  .options p {
+    font-size: 1rem;
+  }
+  .access h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .access p {
+    max-width: 325px;
+    font-size: 1rem;
+  }
+  .devices img {
+    max-width: 350px;
+  }
+  .workflow-intro {
+    max-width: 320px;
+    text-align: center;
+  }
+  .tools {
+    max-width: 340px;
+  }
+  .tools p {
+    font-size: 1rem;
+  }
+  .clipboard-text h3 {
+    font-size: 2rem;
+  }
+  .clipboard-text p {
+    max-width: 330px;
+    font-size: 1rem;
+  }
+}
